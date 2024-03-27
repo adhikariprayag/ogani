@@ -1,0 +1,54 @@
+.home{
+
+    .lgX{
+        overflow-y: scroll;
+        height: 263px;
+    }
+
+    .lgX::-webkit-scrollbar{
+        width: 0.35em;
+    }
+
+    .lgX::-webkit-scrollbar-track{
+        background-color: #198754;
+        border-radius: 50px;
+    }
+
+    .lgX::-webkit-scrollbar-thumb{
+        background-color: #7FAD39 !important;
+        border-radius: 50px;
+    }
+
+    .lgT{
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        padding: 15px !important;
+
+        @media (min-width:0px) and (max-width:992px) {
+            position: static;
+        }
+    }
+
+    .lgiX:hover{
+        background-color: rgba(202, 202, 202, 0.205) !important;
+        .itemX{
+            color: rgba(0, 0, 0, 0.444) !important;
+        }
+    }
+
+    .main-title{
+        position: relative;
+    }
+    .main-title::after{
+        content: '';
+        width: 100px;
+        height: 5px;
+        background-color: green;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+}
